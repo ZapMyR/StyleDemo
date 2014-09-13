@@ -1,0 +1,220 @@
+﻿$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$line-color: #FFF;
+$font-color: #FFF;
+
+$font-size-headline: 48px;
+$font-size-textBig: 36px;
+$font-size-textMedium: 32px;
+$font-size-textSmall: 24px;
+$font-size-textSmallest: 20px;
+
+$linkStrip-spacing: 30px;
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    background: #000 url('../Styles/images/bg.png') repeat-y center top;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+a, span {
+    color: $font-color;
+}
+
+.container {
+    height: 100vh;
+}
+
+.col {
+    overflow:hidden;
+    width: 569px;
+}
+
+.colLeft {
+    @extend .col;
+    float: left;
+}
+
+.colRight {
+    @extend .col;
+    float: right;
+    text-align: right;
+}
+
+.colLine {
+    width: 2px;
+    background: $line-color;
+    float: left;
+    height: 100%;
+}
+
+.logo {
+    width: 514px;
+    height: 250px;
+    background: url("../Styles/images/logo.png") no-repeat center top;
+    margin-top: 55px;
+    margin-left: 25px;
+}
+
+.lineElementContainer {
+    margin-top: 45px;
+}
+
+.lineElementContainerLeft {
+    @extend .lineElementContainer;
+}
+
+.lineElementContainerRight {
+    @extend .lineElementContainer;
+
+}
+
+.lineElementTop {
+    font-size: $font-size-headline;
+    font-weight: bold;
+    overflow: hidden;
+}
+/*.lineElementTop span {
+    
+    text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}*/
+
+.lineElementLine {
+    width: 100%;
+    height: 2px;
+    background: $line-color;
+}
+
+.lineElementBottomContainer {
+    overflow: hidden;
+}
+
+.linkStrip {
+    font-size: $font-size-textSmallest;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.linkStrip ul {
+}
+
+.linkStrip ul li {
+    margin-left: $linkStrip-spacing; 
+}
+
+.linkStrip a {
+    color: $font-color;
+}
+
+
+.dateEntry table {
+    color: $font-color;
+    width: 100%;
+    display: block;
+    padding: 15px 0px;
+}
+
+.dateEntry:hover {    
+    text-decoration:none;
+}
+
+.dateEntry:hover table {
+    background-color: rgba(255,255,255,0.2); 
+}
+
+.dateEntry th {
+    width: 100%;
+}
+
+.dateEntry td {
+    width: 100%;
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+}
+
+.dateEntryTitle {
+    font-size: $font-size-textBig;
+    font-weight: normal;
+}
+
+.dateEntryDate {
+    font-size: $font-size-textMedium;
+}
+
+.dateEntryLocation {
+    font-size: $font-size-textSmall;
+}
+
+
+.references {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.references li {
+    width: 100%;
+    display: block;
+    font-size: $font-size-textBig;
+}
+.references span {
+    width: 100%;
+    display: block;
+    padding: 20px 0px;
+}
+
+.references a {
+    width: 100%;
+    color: $font-color;
+    text-decoration:none;
+}
+.references a:hover span {
+    
+    background-color: rgba(255,255,255,0.2) !important; 
+    padding: 60px 0px;
+}
+.references a:active span {
+    
+    background-color: rgba(255,255,255,0.4) !important; 
+}
+
+.additionals {
+    font-size: $font-size-textSmall;
+    font-weight: normal;
+    text-align: right;
+    margin: 15px;
+}
+
+.additionals a {
+    color: $font-color;
+}
+
+.topLabel {
+    font-size: $font-size-textSmallest;
+}
+
+.userPanel {
+    margin: 65px 0px;
+}
+
+.userPanelLinks {
+    font-size: $font-size-textSmall;
+    margin-top: 15px;
+}
+
+.userPanelLinks li {
+    margin-left: $linkStrip-spacing; 
+}
+
+.userPanelLinks a {
+    color: $font-color;
+}

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>test</title>
+    <link href="Libs/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles/layout.css" rel="stylesheet" />
+    <!--<link href="Styles/animation.css" rel="stylesheet" />-->
+    <link href="Styles/animation.css" rel="stylesheet" />
+    <script src="Libs/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Libs/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/app/app-module.js"></script>
+    <script src="Scripts/app/app-controller.js"></script>
+    <script src="Scripts/app/lineItems/lineContainer-directive.js"></script>
+    <script src="Scripts/app/lineItems/dates/dates-controller.js"></script>
+    <script src="Scripts/app/lineItems/references/references-controller.js"></script>
+</head>
+    <body ng-controller="appCtrl">
+        <button ng-click="pushLineItems()">pushLineItems</button>
+        <div class="container">
+            <div class="colLeft">
+                <div class="logo"></div>
+                <div class="lineItemAnimation" ng-repeat="lineItem in lineItems | filter:{isRightSide:false}">
+                    <lineitemcontainer title="{{lineItem.title}}"
+                                       template="{{lineItem.templateBottom}}"
+                                       alignmentclass="{{lineItem.alignmentClass}}">
+                    </lineitemcontainer>
+                </div>
+            </div>
+            <div class="colLine"></div>
+            <div class="colRight">
+                <div class="lineItemAnimation" ng-repeat="lineItem in lineItems | filter:{isRightSide:true}">
+                    <lineitemcontainer title="{{lineItem.title}}"
+                                       template="{{lineItem.templateBottom}}"
+                                       alignmentclass="{{lineItem.alignmentClass}}">
+                    </lineitemcontainer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

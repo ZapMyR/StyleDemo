@@ -1,0 +1,127 @@
+﻿/* starting animations */
+.lineElementBottom.ng-enter {
+    -webkit-animation:.5s moveUp;
+    -moz-animation:.5s moveUp;
+    -o-animation:.5s moveUp;
+    animation:.5s moveUp;
+}
+
+/* starting animations */
+.lineElementTop.ng-enter {
+    -webkit-animation:1s moveUp;
+    -moz-animation:1s moveUp;
+    -o-animation:1s moveUp;
+    animation:1s moveUp;
+}
+
+.lineItemAnimation.ng-enter {
+    -webkit-animation:1s moveUpBig;
+    -moz-animation:1s moveUpBig;
+    -o-animation:1s moveUpBig;
+    animation:1s moveUpBig;
+}
+
+.lineItemAnimation.ng-enter .lineElementContainerRight .lineElementLine {
+    -webkit-animation:1s fadeInLeft;
+    -moz-animation:1s fadeInLeft;
+    -o-animation:1s fadeInLeft;
+    animation:1s fadeInLeft;
+}
+
+.lineItemAnimation.ng-enter .lineElementContainerLeft .lineElementLine {
+    -webkit-animation:1s fadeInRight;
+    -moz-animation:1s fadeInRight;
+    -o-animation:1s fadeInRight;
+    animation:1s fadeInRight;
+}
+
+.lineItemAnimation.ng-enter .lineElementContainerLeft .lineElementTop {
+    -webkit-animation:1s fadeInUp;
+    -moz-animation:1s fadeInUp;
+    -o-animation:1s fadeInUp;
+    animation:1s fadeInUp;
+}
+
+.lineItemAnimation.ng-enter .lineElementContainerRight .lineElementTop {
+    -webkit-animation:1s fadeInUp;
+    -moz-animation:1s fadeInUp;
+    -o-animation:1s fadeInUp;
+    animation:1s fadeInUp;
+}
+
+.lineItemAnimation.ng-enter .lineElementContainerLeft .lineElementBottom {
+    -webkit-animation:1s fadeInDown;
+    -moz-animation:1s fadeInDown;
+    -o-animation:1s fadeInDown;
+    animation:1s fadeInDown;
+}
+
+.lineItemAnimation.ng-enter .lineElementContainerRight .lineElementBottom {
+    -webkit-animation:1s fadeInDown;
+    -moz-animation:1s fadeInDown;
+    -o-animation:1s fadeInDown;
+    animation:1s fadeInDown;
+}
+
+@-webkit-keyframes moveUp {
+  from { transform: translateY(500px);
+      opacity: 0;
+  }
+  to { transform: translateY(0);
+      opacity: 1; }
+}
+
+@-webkit-keyframes moveUpBig {
+  0% { transform: translateY(2000px);
+      opacity: 0;
+  }
+  50% { transform: translateY(0);
+      opacity: 0.5;
+  }
+  100% { 
+      opacity: 1; }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% { 
+      opacity: 0;
+  }
+  50% { transform: translateX(-500px);
+      opacity: 0.5;
+  }
+  100% { transform: translateX(0);
+      opacity: 1; }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% { 
+      opacity: 0;
+  }
+  50% { transform: translateX(500px);
+      opacity: 0.5;
+  }
+  100% { transform: translateX(0);
+      opacity: 1; }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% { 
+      opacity: 0;
+  }
+  50% { transform: translateY(500px);
+      opacity: 0.5;
+  }
+  100% { transform: translateY(0);
+      opacity: 1; }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% { 
+      opacity: 0;
+  }
+  50% { transform: translateY(-500px);
+      opacity: 0.5;
+  }
+  100% { transform: translateY(0);
+      opacity: 1; }
+}

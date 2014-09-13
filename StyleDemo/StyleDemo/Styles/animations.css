@@ -1,0 +1,67 @@
+﻿@-webkit-keyframes lineItemBottomFadeIn {
+  0% {
+    -moz-transform: translateY(-500px);
+    -ms-transform: translateY(-500px);
+    -o-transform: translateY(-500px);
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px); }
+
+  100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+@-moz-keyframes lineItemBottomFadeIn {
+  0% {
+    -moz-transform: translateY(-500px);
+    -ms-transform: translateY(-500px);
+    -o-transform: translateY(-500px);
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px); }
+
+  100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+@-o-keyframes lineItemBottomFadeIn {
+  0% {
+    -moz-transform: translateY(-500px);
+    -ms-transform: translateY(-500px);
+    -o-transform: translateY(-500px);
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px); }
+
+  100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+@keyframes lineItemBottomFadeIn {
+  0% {
+    -moz-transform: translateY(-500px);
+    -ms-transform: translateY(-500px);
+    -o-transform: translateY(-500px);
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px); }
+
+  100% {
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+.lineItemBottom.ng-enter {
+  -webkit-animation: .5s lineItemBottomFadeIn .5s 1;
+  -moz-animation: .5s lineItemBottomFadeIn .5s 1;
+  -o-animation: .5s lineItemBottomFadeIn .5s 1;
+  animation: .5s lineItemBottomFadeIn .5s 1; }
+
+/*# sourceMappingURL=animations.css.map */

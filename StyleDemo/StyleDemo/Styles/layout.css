@@ -1,0 +1,157 @@
+﻿body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  background: #000 url('../Styles/images/bg.png') repeat-y center top; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style-type: none;
+  display: inline; }
+
+a, span {
+  color: #FFF; }
+
+.container {
+  height: 100vh; }
+
+.col, .colLeft, .colRight {
+  overflow: hidden;
+  width: 569px; }
+
+.colLeft {
+  float: left; }
+
+.colRight {
+  float: right;
+  text-align: right; }
+
+.colLine {
+  width: 2px;
+  background: #FFF;
+  float: left;
+  height: 100%; }
+
+.logo {
+  width: 514px;
+  height: 250px;
+  background: url("../Styles/images/logo.png") no-repeat center top;
+  margin-top: 55px;
+  margin-left: 25px; }
+
+.lineElementContainer, .lineElementContainerLeft, .lineElementContainerRight {
+  margin-top: 45px; }
+
+.lineElementTop {
+  font-size: 48px;
+  font-weight: bold;
+  overflow: hidden; }
+
+/*.lineElementTop span {
+    
+    text-shadow: 0px 0px 1px rgba(255,255,255,1);
+}*/
+.lineElementLine {
+  width: 100%;
+  height: 2px;
+  background: #FFF; }
+
+.lineElementBottomContainer {
+  overflow: hidden; }
+
+.linkStrip {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px; }
+
+.linkStrip ul li {
+  margin-left: 30px; }
+
+.linkStrip a {
+  color: #FFF; }
+
+.dateEntry table {
+  color: #FFF;
+  width: 100%;
+  display: block;
+  padding: 15px 0px; }
+
+.dateEntry:hover {
+  text-decoration: none; }
+
+.dateEntry:hover table {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.dateEntry th {
+  width: 100%; }
+
+.dateEntry td {
+  width: 100%;
+  text-align: center;
+  float: right;
+  margin-right: 10px; }
+
+.dateEntryTitle {
+  font-size: 36px;
+  font-weight: normal; }
+
+.dateEntryDate {
+  font-size: 32px; }
+
+.dateEntryLocation {
+  font-size: 24px; }
+
+.references {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.references li {
+  width: 100%;
+  display: block;
+  font-size: 36px; }
+
+.references span {
+  width: 100%;
+  display: block;
+  padding: 20px 0px; }
+
+.references a {
+  width: 100%;
+  color: #FFF;
+  text-decoration: none; }
+
+.references a:hover span {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  padding: 60px 0px; }
+
+.references a:active span {
+  background-color: rgba(255, 255, 255, 0.4) !important; }
+
+.additionals {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: right;
+  margin: 15px; }
+
+.additionals a {
+  color: #FFF; }
+
+.topLabel {
+  font-size: 20px; }
+
+.userPanel {
+  margin: 65px 0px; }
+
+.userPanelLinks {
+  font-size: 24px;
+  margin-top: 15px; }
+
+.userPanelLinks li {
+  margin-left: 30px; }
+
+.userPanelLinks a {
+  color: #FFF; }
+
+/*# sourceMappingURL=layout.css.map */

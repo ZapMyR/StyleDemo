@@ -1,0 +1,14 @@
+﻿<div class="lineElementBottomContainer" ng-controller="referencesCtrl">
+    <ul class="references">
+        <a class="reference" href="" ng-repeat="reference in references">
+            <li style="background: url({{reference.imageUrl}}) no-repeat -50px -300px">
+                <span>{{reference.title}}</span>
+            </li>
+        </a>
+    </ul>
+    <ul class="additionals">
+        <li>
+            <a href=""><span>mehr...</span></a>
+        </li>
+    </ul>
+</div>

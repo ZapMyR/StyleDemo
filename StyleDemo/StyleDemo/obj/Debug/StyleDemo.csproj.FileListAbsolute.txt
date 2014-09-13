@@ -1,0 +1,12 @@
+C:\IIS_DesignDemo\StyleDemo\StyleDemo\bin\StyleDemo.dll.config
+C:\IIS_DesignDemo\StyleDemo\StyleDemo\bin\StyleDemo.dll
+C:\IIS_DesignDemo\StyleDemo\StyleDemo\bin\StyleDemo.pdb
+C:\IIS_DesignDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.csprojResolveAssemblyReference.cache
+C:\IIS_DesignDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.dll
+C:\IIS_DesignDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.pdb
+C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\bin\StyleDemo.dll.config
+C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\bin\StyleDemo.dll
+C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\bin\StyleDemo.pdb
+C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.csprojResolveAssemblyReference.cache
+C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.dll
+C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.pdb

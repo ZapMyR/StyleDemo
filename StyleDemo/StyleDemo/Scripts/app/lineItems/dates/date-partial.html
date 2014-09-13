@@ -1,0 +1,15 @@
+﻿<div class="lineElementBottomContainer" ng-controller="datesCtrl">
+    <div class="lineElementBottom" ng-repeat="date in dates">
+        <a href="" class="dateEntry">
+            <table>
+                <tr>
+                    <th class="dateEntryTitle" rowspan="2"><span>{{date.title}}</span></th>
+                    <td class="dateEntryDate"><span>{{date.date}}</span></td>
+                </tr>
+                <tr>
+                    <td class="dateEntryLocation"><span>{{date.location}}</span></td>
+                </tr>
+            </table>
+        </a>
+    </div>
+</div>

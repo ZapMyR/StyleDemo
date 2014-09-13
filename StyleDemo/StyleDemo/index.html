@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>test</title>
+    <link href="Libs/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles/layout.css" rel="stylesheet" />
+    <!--<link href="Styles/animation.css" rel="stylesheet" />-->
+    <link href="Styles/animation.css" rel="stylesheet" />
+    <script src="Libs/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Libs/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/app/app-module.js"></script>
+    <script src="Scripts/app/app-controller.js"></script>
+</head>
+<body ng-controller="appCtrl">
+    <div class="container">
+        <div class="colLeft">
+            <span>{{hello}}</span>
+            <span>{{halloWelt}}</span>
+            <button ng-click="pushItems()">push items</button>
+            <button ng-click="initialize()">init</button>
+            <button ng-click="populate(dates, 0)">populate</button>
+            <div class="logo"></div>
+            <div class="lineElementContainerLeft">
+                <div class="lineElementTop">
+                    <span>Dates</span>
+                </div>
+                <div class="lineElementLine"></div>
+                <div class="lineElementBottomContainer">
+                    <div class="lineElementBottom" ng-repeat="date in dates">
+                        <a href="" class="dateEntry">
+                            <table>
+                                <tr>
+                                    <th class="dateEntryTitle" rowspan="2"><span>{{date.title}}</span></th>
+                                    <td class="dateEntryDate"><span>{{date.date}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="dateEntryLocation"><span>{{date.location}}</span></td>
+                                </tr>
+                            </table>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lineElementContainerLeft">
+                <div class="lineElementTop">
+                    <span>Referenzen</span>
+                </div>
+                <div class="lineElementLine"></div>
+                <div class="lineElementBottom">
+                    <ul class="references">
+                        <a class="reference" href="" ng-repeat="reference in references">
+                            <li style="background: url({{reference.imageUrl}}) no-repeat -50px -300px">
+                                <span>{{reference.title}}</span>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul class="additionals">
+                        <li>
+                            <a href=""><span>mehr...</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="colLine"></div>
+        <div class="colRight">
+            <div class="linkStrip">
+                <ul>
+                    <li>
+                        <a href=""><span>Kontakt</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span>Impressum</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="userPanel">
+                <div class="lineElementTop">
+                    <span class="topLabel">Eingeloggt als:</span>
+                    <span>Username</span>
+                </div>
+                <div class="lineElementLine"></div>
+                <div class="lineElementBottom">
+                    <ul class="userPanelLinks">
+                        <li>
+                            <a href=""><span>Historie</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>Account</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span>Ausloggen</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lineElementContainerRight">
+                <div class="lineElementTop">
+                    <span>Equipment</span>
+                </div>
+                <div class="lineElementLine"></div>
+                <div class="lineElementBottom">
+                </div>
+            </div>
+            <div class="lineElementContainerRight">
+                <div class="lineElementTop">
+                    <span>Leistungen</span>
+                </div>
+                <div class="lineElementLine"></div>
+                <div class="lineElementBottom">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

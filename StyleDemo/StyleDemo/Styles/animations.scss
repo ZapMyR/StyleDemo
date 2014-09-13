@@ -1,0 +1,41 @@
+﻿@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+
+@include keyframes(lineItemBottomFadeIn) {
+  0%   { -moz-transform: translateY(-500px); -ms-transform: translateY(-500px); -o-transform: translateY(-500px); -webkit-transform: translateY(-500px); transform: translateY(-500px); }
+  100% { -moz-transform: translateY(0px); -ms-transform: translateY(0px); -o-transform: translateY(0px); -webkit-transform: translateY(0px); transform: translateY(0px); }
+}
+
+.lineItemBottom.ng-enter {
+  @include animation('.5s lineItemBottomFadeIn .5s 1');
+} 
