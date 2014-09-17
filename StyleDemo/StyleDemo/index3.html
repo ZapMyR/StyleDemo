@@ -21,16 +21,38 @@
     <script src="Scripts/app/lineItems/equipment/equipment-controller.js"></script>
     <script src="Scripts/app/lineItems/userPanel/userPanel-controller.js"></script>
     <script src="Scripts/app/lineItems/linkStrip/linkStrip-controller.js"></script>
-    <script src="Scripts/app/lineItems/list/list-directive.js"></script>
 </head>
-    <body ng-controller="appCtrl as app">
+    <body ng-controller="appCtrl">
         <div class="debug">
             <button ng-click="pushLineItems()">pushLineItems</button>
             <button ng-click="clearLineItems()">clearLineItems</button>
             <button ng-click="switchSides()">switchSides</button>
         </div>
-        <div class="container">
-            <div ng-view></div>
+        <div class="container" ng-init="visitDetail()">
+            <div class="colLeft">
+                <div class="logo"></div>
+                <div class="lineItemAnimation" ng-repeat="lineItem in lineItems | filter:{isRightSide:false}">
+                    <lineitemcontainer title="{{lineItem.title}}"
+                                       templatetop="{{lineItem.templateTop}}"
+                                       templatebottom="{{lineItem.templateBottom}}"
+                                       templatemain="{{lineItem.templateMain}}"
+                                       alignmentclass="{{lineItem.alignmentClass}}"
+                                       controllerused="{{lineItem.controllerUsed}}">
+                    </lineitemcontainer>
+                </div>
+            </div>
+            <div class="colLine"></div>
+            <div class="colRight">
+                <div class="lineItemAnimation" ng-repeat="lineItem in lineItems | filter:{isRightSide:true}">
+                    <lineitemcontainer title="{{lineItem.title}}"
+                                       templatetop="{{lineItem.templateTop}}"
+                                       templatebottom="{{lineItem.templateBottom}}"
+                                       templatemain="{{lineItem.templateMain}}"
+                                       alignmentclass="{{lineItem.alignmentClass}}"
+                                       controllerused="{{lineItem.controllerUsed}}">
+                    </lineitemcontainer>
+                </div>
+            </div>
         </div>
     </body>
 </html>

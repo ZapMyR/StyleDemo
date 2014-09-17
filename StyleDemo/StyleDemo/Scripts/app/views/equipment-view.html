@@ -1,0 +1,31 @@
+﻿<div class="colLeft">
+    <div class="logo"></div>
+    equipmentview
+    <div class="lineItemAnimation" ng-repeat="lineItem in lineItems | filter:{isRightSide:true}">
+        <lineitemcontainer title="{{lineItem.title}}"
+                           templatetop="{{lineItem.templateTop}}"
+                           templatebottom="{{lineItem.templateBottom}}"
+                           templatemain="{{lineItem.templateMain}}"
+                           detailslink="{{lineItem.detailsLink}}"
+                           alignmentclass="{{lineItem.alignmentClass}}"
+                           controllerused="{{lineItem.controllerUsed}}"
+                           listtemplate="{{lineItem.listTemplate}}"
+                           listitems="{{lineItem.listItems}}">
+        </lineitemcontainer>
+    </div>
+</div>
+<div class="colLine"></div>
+<div class="colRight">
+    <div class="lineItemAnimation" ng-repeat="lineItem in lineItems | filter:{isRightSide:false}">
+        <lineitemcontainer title="{{lineItem.title}}"
+                           templatetop="{{lineItem.templateTop}}"
+                           templatebottom="{{lineItem.templateBottom}}"
+                           templatemain="{{lineItem.templateMain}}"
+                           detailslink="{{lineItem.detailsLink}}"
+                           alignmentclass="{{lineItem.alignmentClass}}"
+                           controllerused="{{lineItem.controllerUsed}}"
+                           listtemplate="{{lineItem.listTemplate}}"
+                           listitems="{{lineItem.listItems}}">
+        </lineitemcontainer>
+    </div>
+</div>

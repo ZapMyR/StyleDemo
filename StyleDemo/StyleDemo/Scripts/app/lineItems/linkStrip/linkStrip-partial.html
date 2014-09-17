@@ -1,0 +1,13 @@
+﻿<div class="{{alignmentclass}}">
+    <div class="linkStrip" ng-controller="linkStripCtrl">
+        <div class="lineElementBottomContainer">
+            <div class="lineElementBottom">
+                <ul>
+                    <li ng-repeat="subLink in subLinks">
+                        <a href="{{subLink.link}}"><span>{{subLink.title}}</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

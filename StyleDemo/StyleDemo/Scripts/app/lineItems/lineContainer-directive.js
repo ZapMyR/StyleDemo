@@ -1,40 +1,46 @@
-﻿app.directive('lineitemcontainer', function ($templateCache) {
+﻿app.directive('lineitemcontainer', function ($controller) {
     return {
         restrict: 'E',
-        transclude: true,
+        transclude: false,
         scope: {
             title: '@',
-            template: '@',
-            alignmentclass: '@'
+            templatetop: '@',
+            templatebottom: '@',
+            templatemain: '@',
+            detailslink: '@',
+            alignmentclass: '@',
+            controllerused: '@',
+            listtemplate: '@',
+            listitems: '@'
         },
-        templateUrl: '/Scripts/app/lineItems/lineContainer-partial.html',
+        templateUrl: 'Scripts/app/lineItems/lineContainer-partial.html',
         link: function (scope) {
-
         }
     };
 });
 
-app.directive('lineitemcontainertop', function ($templateCache) {
+app.directive('lineitemcontainertop', function ($controller) {
     return {
         restrict: 'E',
-        transclude: true,
+        transclude: false,
         scope: {
-            title: '@'
-        },
-        templateUrl: '/Scripts/app/lineItems/lineContainerTop-partial.html',
+            title: '@',
+            detailslink: '@'
+    },
+        templateUrl: 'Scripts/app/lineItems/lineContainerTop-partial.html',
         link: function (scope) {
 
         }
     };
 });
 
-app.directive('lineitemcontainerbottom', function ($templateCache) {
+app.directive('lineitemcontainerbottom', function ($controller) {
     return {
         restrict: 'E',
         transclude: false,
         scope: {
         },
-        templateUrl: '/Scripts/app/lineItems/lineContainerBottom-partial.html',
+        templateUrl: 'Scripts/app/lineItems/lineContainerBottom-partial.html',
         link: function (scope) {
 
         }

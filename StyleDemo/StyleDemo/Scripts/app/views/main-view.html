@@ -1,0 +1,26 @@
+﻿<div class="colLeft">
+    <div class="logo"></div>
+    <div class="lineItemAnimation" ng-repeat="lineItem in $parent.lineItems | filter:{isRightSide:false}">
+        <lineitemcontainer title="{{lineItem.title}}"
+                           templatetop="{{lineItem.templateTop}}"
+                           templatebottom="{{lineItem.templateBottom}}"
+                           templatemain="{{lineItem.templateMain}}"
+                           detailslink="{{lineItem.detailsLink}}"
+                           alignmentclass="{{lineItem.alignmentClass}}"
+                           controllerused="{{lineItem.controllerUsed}}">
+        </lineitemcontainer>
+    </div>
+</div>
+<div class="colLine"></div>
+<div class="colRight">
+    <div class="lineItemAnimation" ng-repeat="lineItem in $parent.lineItems | filter:{isRightSide:true}">
+        <lineitemcontainer title="{{lineItem.title}}"
+                           templatetop="{{lineItem.templateTop}}"
+                           templatebottom="{{lineItem.templateBottom}}"
+                           templatemain="{{lineItem.templateMain}}"
+                           detailslink="{{lineItem.detailsLink}}"
+                           alignmentclass="{{lineItem.alignmentClass}}"
+                           controllerused="{{lineItem.controllerUsed}}">
+        </lineitemcontainer>
+    </div>
+</div>

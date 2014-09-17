@@ -1,7 +1,11 @@
-﻿<div class="{{alignmentclass}}">
-    <lineitemcontainertop title="{{title}}">
-    </lineitemcontainertop>
-    <div class="lineElementLine"></div>
-    <lineitemcontainerbottom ng-include="template">
-    </lineitemcontainerbottom>
+﻿<div ng-include="templatemain"
+     title="{{title}}"
+     templatetop="{{templatetop}}"
+     templatebottom="{{templatebottom}}"
+     templatemain="{{templatemain}}"
+     detailslink="{{detailslink}}"
+     alignmentclass="{{alignmentclass}}"
+     controllerused="{{controllerused}}"
+     listtemplate="{{listtemplate}}"
+     listitems="{{listitems}}">
 </div>

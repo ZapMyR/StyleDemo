@@ -1,0 +1,22 @@
+﻿<div class="{{alignmentclass}}">
+    <div class="userPanel" ng-controller="userPanelCtrl">
+        <div class="lineItemContainerTop">
+            <div class="lineElementTop">
+                <span class="topLabel">Eingeloggt als:</span>
+                <a href="{{detailslink}}">
+                    <span>{{username}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="lineElementLine"></div>
+        <div class="lineElementBottomContainer">
+            <div class="lineElementBottom">
+                <ul class="userPanelLinks">
+                    <li ng-repeat="subLink in subLinks">
+                        <a href="{{subLink.link}}"><span>{{subLink.title}}</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

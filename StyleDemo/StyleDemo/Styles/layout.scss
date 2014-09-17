@@ -30,6 +30,10 @@ a, span {
     color: $font-color;
 }
 
+.debug {
+    position: fixed;
+}
+
 .container {
     height: 100vh;
 }
@@ -53,6 +57,8 @@ a, span {
 .colLine {
     width: 2px;
     background: $line-color;
+    position: fixed;
+    margin-left: 569px;
     float: left;
     height: 100%;
 }
@@ -66,7 +72,7 @@ a, span {
 }
 
 .lineElementContainer {
-    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 .lineElementContainerLeft {
@@ -78,10 +84,19 @@ a, span {
 
 }
 
+.lineItemContainerTop {
+    overflow:hidden;
+}
+
 .lineElementTop {
     font-size: $font-size-headline;
     font-weight: bold;
+    height: 60px;
     overflow: hidden;
+}
+
+.lineElementTop a {
+    color: $font-color;
 }
 /*.lineElementTop span {
     
@@ -101,7 +116,7 @@ a, span {
 .linkStrip {
     font-size: $font-size-textSmallest;
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: 26px;
 }
 
 .linkStrip ul {
@@ -199,6 +214,11 @@ a, span {
 }
 
 .topLabel {
+    font-size: $font-size-textSmallest;
+}
+
+.topLabelLink {
+    float: left;
     font-size: $font-size-textSmallest;
 }
 

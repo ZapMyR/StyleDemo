@@ -10,3 +10,9 @@ C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\bin\StyleDemo.pdb
 C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.csprojResolveAssemblyReference.cache
 C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.dll
 C:\Users\smeier\Downloads\StyleDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.pdb
+C:\Users\ROX\Documents\GitHub\StyleDemo\StyleDemo\StyleDemo\bin\StyleDemo.dll.config
+C:\Users\ROX\Documents\GitHub\StyleDemo\StyleDemo\StyleDemo\bin\StyleDemo.dll
+C:\Users\ROX\Documents\GitHub\StyleDemo\StyleDemo\StyleDemo\bin\StyleDemo.pdb
+C:\Users\ROX\Documents\GitHub\StyleDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.csprojResolveAssemblyReference.cache
+C:\Users\ROX\Documents\GitHub\StyleDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.dll
+C:\Users\ROX\Documents\GitHub\StyleDemo\StyleDemo\StyleDemo\obj\Debug\StyleDemo.pdb

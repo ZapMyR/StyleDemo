@@ -57,15 +57,34 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index3.html" />
     <Content Include="index2.html" />
-    <Content Include="Scripts\app\lineItems\dates\date-partial.html" />
+    <Content Include="Scripts\app\lineItems\equipment\equipment-detail-partial.html" />
+    <Content Include="Scripts\app\lineItems\lineContainerDetail-partial.html" />
+    <Content Include="Scripts\app\lineItems\lineContainerDefault-partial.html" />
+    <Content Include="Scripts\app\lineItems\dates\dates-partial.html" />
+    <Content Include="Scripts\app\lineItems\equipment\equipment-controller.js" />
+    <Content Include="Scripts\app\lineItems\equipment\equipment-partial.html" />
     <Content Include="Scripts\app\lineItems\lineContainer-partial.html" />
     <Content Include="Scripts\app\lineItems\lineContainerBottom-partial.html" />
+    <Content Include="Scripts\app\lineItems\lineContainerTopDetail-partial.html" />
     <Content Include="Scripts\app\lineItems\lineContainerTop-partial.html" />
+    <Content Include="Scripts\app\lineItems\linkStrip\linkStrip-controller.js" />
+    <Content Include="Scripts\app\lineItems\linkStrip\linkStrip-partial.html" />
+    <Content Include="Scripts\app\lineItems\list\list-directive.js" />
+    <Content Include="Scripts\app\lineItems\list\list-partial.html" />
+    <Content Include="Scripts\app\lineItems\list\listContainer-partial.html" />
+    <Content Include="Scripts\app\lineItems\list\listItem-partial.html" />
+    <Content Include="Scripts\app\lineItems\products\products-controller.js" />
+    <Content Include="Scripts\app\lineItems\products\products-partial.html" />
     <Content Include="Scripts\app\lineItems\references\reference-partial.html" />
     <Content Include="Scripts\app\lineItems\dates\dates-controller.js" />
     <Content Include="Scripts\app\lineItems\lineContainer-directive.js" />
     <Content Include="Scripts\app\lineItems\references\references-controller.js" />
+    <Content Include="Scripts\app\lineItems\userPanel\userPanel-controller.js" />
+    <Content Include="Scripts\app\lineItems\userPanel\userPanel-partial.html" />
+    <Content Include="Scripts\app\views\equipment-view.html" />
+    <Content Include="Scripts\app\views\main-view.html" />
     <Content Include="Styles\animations.min.css">
       <DependentUpon>animations.css</DependentUpon>
     </Content>
