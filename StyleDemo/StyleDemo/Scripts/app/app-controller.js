@@ -1,4 +1,4 @@
-﻿function appCtrl($scope, $timeout, $location) {
+﻿function appCtrl($scope, $timeout, $location, lineItemsService) {
 
     $scope.lineItems = [];
 
@@ -10,6 +10,7 @@
         new LineItemEquipmentModel(),
         new LineItemProductsModel()
     ];
+
 
     $scope.pushLineItems = function pushLineItems(index) {
         if (index == null) {
@@ -44,10 +45,24 @@
     $scope.goto = function(path) {
         $location.path(path);
     }
+
+    function init() {
+        lineItemsService.registerRouteItems('/', [
+            new LineItemDatesModel(),
+            new LineItemReferencesModel(),
+            new LineItemLinkStripModel(),
+            new LineItemUserPanelModel(),
+            new LineItemEquipmentModel(),
+            new LineItemProductsModel()
+        ]);
+    }
+
+    init();
 } 
 
-app.controller('appCtrl', appCtrl);
 
+app.controller('appCtrl', appCtrl);
+appCtrl.$inject = ['$scope', '$timeout', '$location', 'lineItemsService'];
 
 
 // specialized constructors for LineItems // detail page

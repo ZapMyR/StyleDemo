@@ -69,6 +69,7 @@
     <Content Include="Scripts\app\lineItems\lineContainerBottom-partial.html" />
     <Content Include="Scripts\app\lineItems\lineContainerTopDetail-partial.html" />
     <Content Include="Scripts\app\lineItems\lineContainerTop-partial.html" />
+    <Content Include="Scripts\app\lineItems\lineItems-factory.js" />
     <Content Include="Scripts\app\lineItems\linkStrip\linkStrip-controller.js" />
     <Content Include="Scripts\app\lineItems\linkStrip\linkStrip-partial.html" />
     <Content Include="Scripts\app\lineItems\list\list-directive.js" />

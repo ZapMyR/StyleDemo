@@ -8,7 +8,7 @@
     $scope.$parent.lineItemsBuffer = [
     ];
 
-    $scope.init = function () {
+    function init() {
         $scope.$parent.lineItemsBuffer = [];
 
        
@@ -30,10 +30,7 @@
         new SublinkModel('Mischpulte', '/equipment/mischpulte/'),
         new SublinkModel('DJ', '/equipment/dj/')
     ];
-    
-    (function () {
-        return $scope.init();
-    })();
+    init();
 }
 
 
